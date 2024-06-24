@@ -41,7 +41,7 @@ const App = () => {
     <article>
       <h1>Wild Restaurant Menu</h1>
       {/* pass the variable foodItems as props to MenuList component */}
-      <MenuList />
+      <MenuList listmenu={foodItems} />
     </article>
   );
 };
