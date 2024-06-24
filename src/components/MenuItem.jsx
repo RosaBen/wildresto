@@ -1,7 +1,10 @@
 /* eslint-disable no-unused-vars */
+import { useState } from "react";
 function MenuItem({ item }) {
-  console.log(item);
+  //   console.log(item);
   //create a state isFavorite that has the inital value of isFavorite that comes from the props
+  const [isFavorite, setIsFavorite] = useState(item.isFavorite);
+  console.log(isFavorite);
 
   return (
     <section className="itemContainer">
