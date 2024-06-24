@@ -6,6 +6,10 @@ function MenuItem({ item }) {
   const [isFavorite, setIsFavorite] = useState(item.isFavorite);
   console.log(isFavorite);
 
+  const handleClickFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
+
   return (
     <section className="itemContainer">
       <figure className="imgContainer">
